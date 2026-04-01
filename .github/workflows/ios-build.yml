@@ -35,7 +35,7 @@ jobs:
       - name: Build unsigned .xcarchive
         run: |
           xcodebuild clean archive \
-            -workspace ios/App/App.xcworkspace \
+            -project ios/App/App.xcodeproj \
             -scheme App \
             -configuration Release \
             -sdk iphoneos \
