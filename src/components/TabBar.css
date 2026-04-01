@@ -1,0 +1,35 @@
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--ios-dark-gray);
+  border-top: 1px solid var(--ios-border);
+  height: 83px; /* iOS standard bottom bar padding for home indicator */
+  padding-bottom: 20px; /* Safe area inset usually, simulated */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.tab-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--ios-gray);
+  cursor: pointer;
+  flex: 1;
+  padding-top: 4px;
+}
+
+.tab-item.active {
+  color: var(--ios-orange);
+}
+
+.tab-item span {
+  font-size: 10px;
+  margin-top: 4px;
+  font-weight: 500;
+}

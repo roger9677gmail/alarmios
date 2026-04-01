@@ -1,0 +1,110 @@
+.add-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--ios-bg);
+  z-index: 2000;
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--ios-dark-gray);
+  border-bottom: 1px solid var(--ios-border);
+}
+
+.modal-header h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ios-text);
+}
+
+.modal-btn {
+  background: transparent;
+  border: none;
+  font-size: 17px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-btn.cancel {
+  color: var(--ios-orange);
+}
+
+.modal-btn.save {
+  color: var(--ios-orange);
+  font-weight: 600;
+}
+
+.time-picker-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background-color: var(--ios-dark-gray);
+}
+
+/* On iOS, input[type="time"] will trigger the native wheel */
+.native-time-input {
+  background: transparent;
+  width: auto;
+  min-width: 150px;
+  border: none;
+  color: var(--ios-text);
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.native-time-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* Options List */
+.options-list {
+  margin-top: 30px;
+  background-color: var(--ios-dark-gray);
+  border-top: 1px solid var(--ios-border);
+  border-bottom: 1px solid var(--ios-border);
+  padding-left: 16px;
+}
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 12px 0;
+  border-bottom: 1px solid var(--ios-border);
+  font-size: 17px;
+}
+
+.option-row:last-child {
+  border-bottom: none;
+}
+
+.option-val {
+  color: var(--ios-gray);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.option-input {
+  background: transparent;
+  border: none;
+  color: var(--ios-gray);
+  text-align: right;
+  font-size: 17px;
+}

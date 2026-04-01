@@ -1,0 +1,104 @@
+.alarm-page {
+  padding: 0 16px;
+  height: 100%;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.header-btn {
+  background: transparent;
+  border: none;
+  color: var(--ios-orange);
+  font-size: 17px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.alarm-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--ios-border);
+}
+
+.alarm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--ios-border);
+  position: relative;
+  transition: opacity 0.3s;
+}
+
+.alarm-item.inactive {
+  opacity: 0.5;
+}
+
+.alarm-time-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.alarm-time {
+  font-size: 54px;
+  font-weight: 200;
+  letter-spacing: -2px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.alarm-meridiem {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.alarm-label {
+  font-size: 15px;
+  color: var(--ios-gray);
+  margin-top: -6px;
+}
+
+/* Edit Mode styling */
+.edit-control {
+  width: 40px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: var(--ios-red);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+}
+
+.alarm-item-body {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-right {
+  color: var(--ios-border);
+}
